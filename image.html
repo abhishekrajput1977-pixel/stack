@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://wallpaperaccess.com/full/1605746.jpg" width="400px" alt="no image">
+    <img src="1967054.jpg" width="400px" alt="no image">
+    <picture>
+        <source src="1967054.jpg"/>
+        <img srcset="1967054.jp" alt="">
+    </picture>
+
+    <!-- an image map generator -->
+     <img src="1967054.jpg" width="400px" alt="no image" usemap="#image-map">
+    <img src="1967054.jpg"
+    width="400px" alt="no image"
+   usemap="#image-map">
+
+<map name="image-map">
+    <area onclicked=one() target="" alt="" title="" href="" coords="6054,1482,3705,1224" shape="rect">
+    <area onclicked="two()" target="" alt="" title="" href="" coords="1433,1385,3199,2129" shape="rect">
+    <area onclicked="three()" target="" alt="" title="" href="" coords="3598,1482,6183,2140" shape="rect">
+</map>
+<script>
+    function one(){
+        alert("YOu clicked on one")
+    }
+    function two(){
+        alert("YOu clicked on two")
+    }
+    function three(){
+        alert("YOu clicked on three")
+    }
+</script>
+
+</body>
+</html>
